@@ -14,4 +14,9 @@ public class WordPuzzleTest {
     WordPuzzle testWordPuzzle = new WordPuzzle();
     assertEquals("l-l-l", testWordPuzzle.stringToWordPuzzle("lalel"));
   }
+  @Test
+  public void stringToWordPuzzle_Replace_aei_WithDashes_4() {
+    WordPuzzle testWordPuzzle = new WordPuzzle();
+    assertEquals("l-l-l-l", testWordPuzzle.stringToWordPuzzle("lalelil"));
+  }
 }

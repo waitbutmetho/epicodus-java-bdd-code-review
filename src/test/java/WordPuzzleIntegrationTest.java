@@ -19,4 +19,11 @@ public class WordPuzzleIntegrationTest extends FluentTest {
         goTo("http://localhost:4567");
         assertThat(pageSource()).contains("Word");
     }
+    @Test
+    public void puzzleDisplays() {
+      goTo("http://localhost:4567/");
+      fill("[name='stringInput']").with("peep");
+      submit("#submitButton");
+      assertThat(pageSource()).contains("p--p");
+  }
 }

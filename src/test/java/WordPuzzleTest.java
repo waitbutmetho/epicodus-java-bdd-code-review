@@ -9,5 +9,9 @@ public class WordPuzzleTest {
     WordPuzzle testWordPuzzle = new WordPuzzle();
     assertEquals("l-l", testWordPuzzle.stringToWordPuzzle("lal"));
   }
-
+  @Test
+  public void stringToWordPuzzle_Replace_ae_WithDashes_4() {
+    WordPuzzle testWordPuzzle = new WordPuzzle();
+    assertEquals("l-l-l", testWordPuzzle.stringToWordPuzzle("lalel"));
+  }
 }

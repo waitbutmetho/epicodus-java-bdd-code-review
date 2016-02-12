@@ -7,7 +7,7 @@ public class WordPuzzle {
   public static void main(String[] args) {}
 
     public static String stringToWordPuzzle(String userString) {
-  String wordPuzzleString = userString.replaceAll("[aeio]", "-");
+  String wordPuzzleString = userString.replaceAll("[aeiou]", "-");
   return wordPuzzleString;
   }
 }
